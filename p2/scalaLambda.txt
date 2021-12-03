@@ -1,0 +1,24 @@
+//-------funcion lambda-----------
+
+val suma1: (Int, Int) => Int = (x: Int, y: Int) => x + y
+val resta1: (Int, Int) => Int = (x: Int, y: Int) => x - y
+val multi1: (Int, Int) => Int = (x: Int, y: Int) => x * y
+val div1: (Int, Int) => Int = (x: Int, y: Int) => x / y
+
+
+def calcu2(x:Int, y:Int, operacion:String):Int={
+  operacion match {
+    case "suma1"=>suma1(x,y)
+    case "resta1"=>resta1(x,y)
+    case "multi1"=>multi1(x,y)
+    case "div1"=>div1(x,y)
+  }
+}
+
+
+
+//---salida------
+val ejemplo1=calcu2(2,4,"suma1")
+val ejemplo1=calcu2(2,4,"resta1")
+val ejemplo1=calcu2(2,4,"multi1")
+val ejemplo1=calcu2(2,4,"div1")
